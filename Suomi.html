@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<head>
+  <title>CV Lauri Puro</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="top-bar.css">
+  <link rel="stylesheet" href="info-sheet.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--TOP BAR-->
+  <div class="top-bar">
+    <div class="suomi-div" onclick="Suomi()">SUOMI</div>
+    <div class="english-div" onclick="English()">ENGLISH</div>
+    <div class="contact-icon-box"></div>
+    <div class="contact-icon-box">
+      <a class="contact-icon-phone" href="tel:0449898880">
+        <img class="icon" src="icons/phone.svg">
+        <span class="phone-hover">+358-44-9898880</span>
+      </a>
+    </div>
+    <div class="contact-icon-box">
+      <a class="contact-icon-mail" href="mailto: purolauri@gmail.com" target="_blank">
+        <img class="icon" src="icons/mail.svg">
+        <span class="mail-hover">purolauri@gmail.com</span>
+      </a> 
+    </div>
+    <div class="contact-icon-box">
+      <a class="contact-icon-li" href="https://www.linkedin.com/in/lauri-puro-82b3471b2/" target="_blank">
+        <img class="icon" src="icons/li.svg">
+        <span class="li-hover">linkedin profiili</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!--TOP SECTION-->
+  <div class="top-box">
+    <div class="top-box-left">
+        <div class="name">LAURI&#8201;&#8201;PURO</div>
+        <div class="info-box">
+          <p class="info-box-finnish">Olen keväällä kandidaatiksi valmistuva tuotantotalouden opiskelija, 
+            jolla on opintojen ja töiden kautta osaamista erityisesti toiminnanohjauksesta sekä toimitusketjujen hallinnasta. 
+            Minua kiinnostaa yritysten prosessien kehittäminen ja niiden parissa työskentely.
+          </p>
+        </div>
+    </div>
+    <div class="top-box-right">
+      <img class="profile-picture" src="photos/PKLPCV.png">
+    </div>
+  </div>
+
+
+  <!--HEADER SECTION-->
+  <hr class="header-bar-line">
+  <div id="header-bar" class="header-bar">
+    <div class="header-container" onclick="showEducation()">
+      <a href="#header-bar" class="active-header" id="e-header-div">KOULUTUS</a>
+    </div>
+    <div class="header-container" onclick="showJobExperience()">
+      <a href="#header-bar" class="header-div" id="j-header-div">TYÖKOKEMUS</a>
+    </div>
+    <div class="header-container" onclick="showSkills()">
+      <a href="#header-bar" class="header-div" id="s-header-div">TAIDOT</a>
+    </div>
+  </div>
+
+
+  <!--CV INFORMATION SECTION-->
+  <div id="middle-box" class="middle-box">
+
+    <div id="education-triangle" class="edu-triangle">
+      <svg class="my-triangle">
+        <path d="M50 5 L10 40 L90 40 Z"/>   
+      </svg>
+    </div>
+
+    <!--EDUCATION-->
+    <div id="education-sheet">
+      <div id="tuni" class="info-row-open" onclick="toggleInfoRow('tuni', 'tuni-pm')">
+        <div class="info-row-header">
+          <div id="tuni-pm" class="plus-minus-div">
+            <img src="icons/minus.svg">
+          </div>
+          <h2><strong>TUOTANTOTALOUS</strong> &nbsp; &nbsp; &nbsp; Tampereen Yliopisto</h2>
+        </div>
+        <div class="tuni-columns">
+          <ol class="kand-ol">
+            <h3>Kandidaatti  &nbsp; &nbsp; 5/2024</h3>
+              <dd>Sivuaine: <strong>Tuotanto ja tuotekehitys</strong></dd>
+              <dd>Opintojen keskiarvo: <strong>4,16</strong></dd>
+              <a href="opintosuoritusote.html" target="_blank" onclick="toggleInfoRow('tuni', 'tuni-pm')">
+                <dd class="opintosuoritusote-text">Opintosuoritusote</dd>
+              </a>
+          </ol>
+          <!--<hr class="black-hr-tuni">-->
+          <ol class="di-ol">
+            <h3>Diplomi-insinööri  &nbsp; &nbsp; 5/2026</h3>
+              <dd>Pääaine: <strong>Talouden ja liiketoiminnan hallinta</strong></dd>
+              <dd>Sivuaine: <strong>Tuotantojärjestelmät</strong></dd>
+          </ol>
+        </div>
+      </div>
+      <hr class="black-hr">
+      <div id="hellu" class="info-row" onclick="toggleInfoRow('hellu', 'hellu-pm')">
+        <div class="info-row-header">
+          <div id="hellu-pm" class="plus-minus-div">
+            <img src="icons/plus.svg">
+          </div>
+          <h2><strong>YLIOPPILASTUTKINTO</strong> &nbsp; &nbsp; &nbsp; Helsingin luonnontiedelukio</h2>
+        </div>
+          <ul class="hellu-ul">
+            <h3>Ylioppilastutkintotodistus:</h3>
+            <li class="yo-tod">Pitkä matematiikka: <strong>L</strong></li>
+            <li class="yo-tod">Fysiikka: <strong>L</strong></li>
+            <li class="yo-tod">Kemia: <strong>L</strong></li>
+            <li class="yo-tod">Äidinkieli: <strong>M</strong></li>
+            <li class="yo-tod">Englanti: <strong>C</strong></li>
+            <li class="yo-tod">Biologia: <strong>M</strong></li>
+          </ul>
+          <br>
+      </div>
+    </div>
+    <div id="job-experience-triangle" class="jex-triangle">
+      <svg class="my-triangle">
+        <path d="M50 5 L10 40 L90 40 Z"/>   
+      </svg>
+    </div>
+
+    <!--JOB EXPERIENCE-->
+    <div id="job-experience-sheet">
+      <div id="toiminnanohjaus" class="info-row-open" onclick="toggleInfoRow('toiminnanohjaus', 'toiminnanohjaus-pm')">
+        <div class="info-row-header">
+          <div id="toiminnanohjaus-pm" class="plus-minus-div">
+            <img src="icons/minus.svg">
+          </div>
+          <h2><strong>KURSSIASSISTENTTI</strong> &nbsp; &nbsp; &nbsp; Tampereen Yliopisto &nbsp; &nbsp; &nbsp; 2024</h2>
+        </div>
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">Toiminnanohjauksen kurssiassistentin tehtävässä pääsen syventämään osaamistani toiminnanohjauksen aihepiireistä</li>
+            <li class="experience-bullets">Pidän luentoja ja laskuharjoituksia, suunnittelen sekä tarkastan tenttitehtäviä ja osallistun kurssin kehittämiseen</li>
+            <li class="experience-bullets">Työsuhde on osa-aikainen ja kestää 4 kuukautta</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="black-hr">
+      <div id="mölnlycke" class="info-row-open" onclick="toggleInfoRow('mölnlycke', 'mölnlycke-pm')">
+        <div class="info-row-header">
+          <div id="mölnlycke-pm" class="plus-minus-div">
+            <img src="icons/minus.svg">
+          </div>
+          <h2><strong>MATERIAALISUUNNITTELIJA</strong> &nbsp; &nbsp; &nbsp; Mölnlycke &nbsp; &nbsp; &nbsp; 2023</h2>
+        </div>
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">Vastasin yli 150 raaka-aineen oikea-aikaisista tilauksista sekä kahden konelinjan tuotannonsuunnittelusta</li>
+            <li class="experience-bullets">Onnistuin pitämään vastuullani olleiden materiaalien varastosaldot tavoitetason sisällä ilman, että yksikään loppui kesken</li>
+            <li class="experience-bullets">Olin mukana viidessä tuotemuutosprojektissa tekemällä raaka-aineiden phase-in ja phase-out suunnitelmat</li>
+            <li class="experience-bullets">Työsuhde oli täysipäiväinen ja kesti 4 kuukautta</li>
+            <li class="experience-italic">"Lauri sisäisti hyvin nopeasti työhön kuuluvat tehtävät ja vastuut. 
+              Hän on erinomainen osa suunnittelutiimiä luoden luottamusta herättävän kuvan itsestään ja osaamisestaan" –– Anna Kontinen, esihenkilö</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="black-hr">
+      <div id="messilä" class="info-row" onclick="toggleInfoRow('messilä', 'messilä-pm')">
+        <div class="info-row-header">
+          <div id="messilä-pm" class="plus-minus-div">
+            <img src="icons/plus.svg">
+          </div>
+          <h2><strong>CADDIEMASTER</strong> &nbsp; &nbsp; &nbsp; Messilä Golf &nbsp; &nbsp; &nbsp; 2020 ja 2022</h2>
+        </div>
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">Vastasin golfkentän asiakaspalvelutehtävistä ja osallistuin kilpailujen ja tapahtumien järjestämiseen</li>
+            <li class="experience-bullets">Huolehdin golfkentän pelaamiseen liittyvistä asioista kuten pelioikeuksista, osakkuuksista ja jäsenyyksistä</li>
+            <li class="experience-bullets">Työskentelin yhteensä noin 12 kuukautta, joista täysipäiväisesti noin 7 kuukautta</li>
+          </ul>
+        </div>  
+      </div>
+      <hr class="black-hr">
+      <div id="shell" class="info-row" onclick="toggleInfoRow('shell', 'shell-pm')">
+        <div class="info-row-header">
+          <div id="shell-pm" class="plus-minus-div">
+            <img src="icons/plus.svg">
+          </div>
+          <h2><strong>HUOLTOASEMATYÖNTEKIJÄ</strong> &nbsp; &nbsp; &nbsp; Shell Mikkola &nbsp; &nbsp; &nbsp; 2019</h2>
+        </div> 
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">Tehtäviin kuului monipuolisia asiakaspalvelutehtäviä ja huoltoaseman ylläpitotöitä</li>
+            <li class="experience-bullets">Autoin huoltoasemaamme voittamaan kansallisen myyntikilpailun olemalla aseman aktiivisin myyjä</li>
+            <li class="experience-bullets">Työsuhde oli täysipäiväinen ja kesti 4 kuukautta</li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+
+    <!--SKILLS-->
+    <div id="skills-triangle" class="ski-triangle">
+      <svg class="my-triangle">
+        <path d="M50 5 L10 40 L90 40 Z"/>   
+      </svg>
+    </div>
+    <div id="skills-sheet">
+      <div class="skills-direction">
+        <div id="IT" class="info-row-IT">
+          <h2><strong>JÄRJESTELMÄT</strong></h2>
+          <ol class="ol-skills">
+            <h3 class="skills-font">Microsoft Office ––– Erinomainen</h3>
+            <h3 class="skills-font">SAP ––– Hyvä</h3>
+            <h3 class="skills-font">RapidResponce ––– Hyvä</h3>
+            <h3 class="skills-font">MatLab ––– Perustaidot</h3>
+            <h3 class="skills-font">HTML + CSS + JS ––– Perustaidot</h3>
+            <h3 class="skills-font">Solid Works ––– Perustaidot</h3>
+          </ol>
+          <br>
+        </div>
+        <hr class="black-hr-skills">
+        <div id="languages" class="info-row-languages">
+          <h2><strong>KIELITAIDOT</strong></h2>
+          <ol class="ol-skills">
+            <h3 class="skills-font">Suomi ––– Äidinkieli</h3>
+            <h3 class="skills-font">Englanti ––– C1</h3>
+            <h3 class="skills-font">Ruotsi ––– B1</h3>
+          </ol>
+          <br>
+        </div>
+        <hr class="black-hr-skills">
+        <div id="pro" class="info-row-pro">
+          <h2><strong>TYÖELÄMÄTAIDOT</strong></h2>
+          <ol class="ol-skills">
+            <h3 class="skills-font">Ongelmanratkaisu</h3>
+            <h3 class="skills-font">Toiminnanohjaus</h3>
+            <h3 class="skills-font">Muutoksenhallinta</h3>
+          </ol>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--VIDEO SECTION-->
+  <div class="video-box">
+    <div class="video-div">
+      <iframe class="cv-video" src="https://www.youtube.com/embed/WHC28qttZ3">
+      </iframe>
+    </div>
+  </div>
+
+  <script src="LPCVV2.js"></script>
+</body>

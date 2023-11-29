@@ -1,0 +1,141 @@
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+  width: 97%;
+}
+.suomi-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font-size: 21px;
+  transition: 0.2s;
+}
+.suomi-div:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+.english-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font-size: 21px;
+  transition: 0.2s;
+}
+.english-div:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+.contact-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  margin-right: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+.contact-icon-box:hover .icon {
+  cursor: pointer;
+  opacity: 50%;
+}
+.icon {
+  transition: 0.2s;
+}
+.contact-icon-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  position: absolute;
+  transition: 0.2s;
+}
+.contact-icon-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  position: absolute;
+}
+.contact-icon-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  position: absolute;
+}
+
+.phone-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 14px;
+  box-shadow: 0px 0px 1px 0px rgb(150, 150, 150);
+  padding: 0px 6px 0px 6px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 28px;
+  width: 120px;
+  top: 45px;
+
+  
+
+  right: -44px;
+}
+.mail-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 14px;
+  box-shadow: 0px 0px 1px 0px rgb(150, 150, 150);
+  padding: 0px 10px 0px 10px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 28px;
+  width: fit-content;
+  top: 47px;
+
+  right: -45px;
+}
+.li-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 14px;
+  box-shadow: 0px 0px 1px 0px rgb(150, 150, 150);
+  padding: 0px 8px 0px 8px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 28px;
+  width: 100px;
+  top: 46px;
+
+  right: -20px;
+}
+
+
+.contact-icon-box:hover .phone-hover {
+  visibility: visible;
+}
+
+.contact-icon-box:hover .mail-hover {
+  visibility: visible;
+}
+
+.contact-icon-box:hover .li-hover {
+  visibility: visible;
+}

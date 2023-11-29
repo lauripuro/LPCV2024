@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<head>
+  <title>CV Lauri Puro</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="top-bar.css">
+  <link rel="stylesheet" href="info-sheet.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--TOP BAR-->
+  <div class="top-bar">
+    <div class="suomi-div" onclick="Suomi()">SUOMI</div>
+    <div class="english-div" onclick="English()">ENGLISH</div>
+    <div class="contact-icon-box"></div>
+    <div class="contact-icon-box">
+      <a class="contact-icon-phone" href="tel:0449898880">
+        <img class="icon" src="icons/phone.svg">
+        <span class="phone-hover">+358-44-9898880</span>
+      </a>
+    </div>
+    <div class="contact-icon-box">
+      <a class="contact-icon-mail" href="mailto: purolauri@gmail.com" target="_blank">
+        <img class="icon" src="icons/mail.svg">
+        <span class="mail-hover">purolauri@gmail.com</span>
+      </a> 
+    </div>
+    <div class="contact-icon-box">
+      <a class="contact-icon-li" href="https://www.linkedin.com/in/lauri-puro-82b3471b2/" target="_blank">
+        <img class="icon" src="icons/li.svg">
+        <span class="li-hover">linkedin profile</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!--TOP SECTION-->
+  <div class="top-box">
+    <div class="top-box-left">
+        <div id="name" class="name">LAURI&#8201;&#8201;PURO</div>
+        <div class="info-box">
+          <p class="info-box-english">
+            I am an Industrial Engineering and Management student set to graduate with a bachelor's degree in the spring. 
+            I have expertise in operations management and supply chain management gained through studies and previous work. 
+            I am particularly interested in business process improvement and the prospect of working in this field.
+          </p>
+        </div>
+    </div>
+    <div class="top-box-right">
+      <img class="profile-picture" src="photos/PKLPCV.png">
+    </div>
+  </div>
+
+
+  <!--HEADER SECTION-->
+  <hr class="header-bar-line">
+  <div id="header-bar" class="header-bar">
+    <div class="header-container" onclick="showEducation()">
+      <a href="#header-bar" class="active-header" id="e-header-div">EDUCATION</a>
+    </div>
+    <div class="header-container" onclick="showJobExperience()">
+      <a href="#header-bar" class="header-div" id="j-header-div">EXPERIENCE</a>
+    </div>
+    <div class="header-container" onclick="showSkills()">
+      <a href="#header-bar" class="header-div" id="s-header-div">SKILLS</a>
+    </div>
+  </div>
+
+
+  <!--CV INFORMATION SECTION-->
+  <div id="middle-box" class="middle-box">
+
+    <div id="education-triangle" class="edu-triangle">
+      <svg class="my-triangle">
+        <path d="M50 5 L10 40 L90 40 Z"/>   
+      </svg>
+    </div>
+
+    <!--EDUCATION-->
+    <div id="education-sheet">
+      <div id="tuni" class="info-row-open" onclick="toggleInfoRow('tuni', 'tuni-pm')">
+        <div class="info-row-header">
+          <div id="tuni-pm" class="plus-minus-div">
+            <img src="icons/minus.svg">
+          </div>
+          <h2 class="small-title"><strong>INDUSTRIAL ENGINEERING & MANAGEMENT</strong> &nbsp; &nbsp; Tampere University</h2>
+        </div>
+        <div class="tuni-columns">
+          <ol class="kand-ol">
+            <h3>Bachelor  &nbsp; &nbsp; 5/2024</h3>
+              <dd>Minor: <strong>Production and R&D</strong></dd>
+              <dd>GPA: <strong>4,16</strong></dd>
+              <a href="opintosuoritusote.html" target="_blank" onclick="toggleInfoRow('tuni', 'tuni-pm')">
+                <dd class="opintosuoritusote-text">Transcript of records</dd>
+              </a>
+          </ol>
+          <!--<hr class="black-hr-tuni">-->
+          <ol class="di-ol">
+            <h3>Master  &nbsp; &nbsp; 5/2026</h3>
+              <dd>Major: <strong>Industrial Economics and Business Management</strong></dd>
+              <dd>Minor: <strong>Production Systems</strong></dd>
+          </ol>
+        </div>
+      </div>
+      <hr class="black-hr">
+      <div id="hellu" class="info-row" onclick="toggleInfoRow('hellu', 'hellu-pm')">
+        <div class="info-row-header">
+          <div id="hellu-pm" class="plus-minus-div">
+            <img src="icons/plus.svg">
+          </div>
+          <h2 class="small-title"><strong>MATRICULATION EXAMINATION</strong> &nbsp; &nbsp; Helsinki High School of Natural Sciences</h2>
+        </div>
+          <ul class="hellu-ul">
+            <h3>Matriculation Examination Certificate:</h3>
+            <li class="yo-tod">Mathematics: <strong>L</strong></li>
+            <li class="yo-tod">Physics: <strong>L</strong></li>
+            <li class="yo-tod">Chemistry: <strong>L</strong></li>
+            <li class="yo-tod">Finnish: <strong>M</strong></li>
+            <li class="yo-tod">English: <strong>C</strong></li>
+            <li class="yo-tod">Biology: <strong>M</strong></li>
+          </ul>
+          <br>
+      </div>
+    </div>
+    <div id="job-experience-triangle" class="jex-triangle">
+      <svg class="my-triangle">
+        <path d="M50 5 L10 40 L90 40 Z"/>   
+      </svg>
+    </div>
+
+    <!--JOB EXPERIENCE-->
+    <div id="job-experience-sheet">
+      <div id="toiminnanohjaus" class="info-row-open" onclick="toggleInfoRow('toiminnanohjaus', 'toiminnanohjaus-pm')">
+        <div class="info-row-header">
+          <div id="toiminnanohjaus-pm" class="plus-minus-div">
+            <img src="icons/minus.svg">
+          </div>
+          <h2><strong>COURSE ASSISTANT</strong> &nbsp; &nbsp; &nbsp; Tampere University &nbsp; &nbsp; &nbsp; 2024</h2>
+        </div>
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">Deepened my understanding in the field of Operations Management</li>
+            <li class="experience-bullets">Gave lectures, designed exam exercises, and helped to develop the course</li>
+            <li class="experience-bullets">I am working part-time for 4 months</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="black-hr">
+      <div id="mölnlycke" class="info-row-open" onclick="toggleInfoRow('mölnlycke', 'mölnlycke-pm')">
+        <div class="info-row-header">
+          <div id="mölnlycke-pm" class="plus-minus-div">
+            <img src="icons/minus.svg">
+          </div>
+          <h2> <strong>MATERIAL PLANNER</strong> &nbsp; &nbsp; &nbsp; Mölnlycke &nbsp; &nbsp; &nbsp; 2023</h2>
+        </div>
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">I was responsible for orders of over 150 raw materials and the production planning of two machine lines</li>
+            <li class="experience-bullets">I succesfully maintained materials stock levels within target without shortages</li>
+            <li class="experience-bullets">Succesfully made the phase-in and phase-out plans in five product change projects</li>
+            <li class="experience-bullets">I worked full-time for 4 months</li>
+            <li class="experience-italic">"Lauri very quickly internalised the tasks and responsibilities of the job. 
+              He is an excellent part of the planning team and he gives a trustworthy image of himself and his expertise" –– Anna Kontinen, supervisor</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="black-hr">
+      <div id="messilä" class="info-row" onclick="toggleInfoRow('messilä', 'messilä-pm')">
+        <div class="info-row-header">
+          <div id="messilä-pm" class="plus-minus-div">
+            <img src="icons/plus.svg">
+          </div>
+          <h2><strong>CADDIEMASTER</strong> &nbsp; &nbsp; &nbsp; Messilä Golf &nbsp; &nbsp; &nbsp; 2020 ja 2022</h2>
+        </div>
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">I took care of all matters related to playing on the golf course, such as playing rights, shares and memberships</li>
+            <li class="experience-bullets">I was responsible for customer service tasks and acted as a link between the different stakeholders of the golf course</li>
+            <li class="experience-bullets">Helped organising competitions and events</li>
+            <li class="experience-bullets">In total I worked about 12 months, of which about 7 months full-time</li>
+          </ul>
+        </div>  
+      </div>
+      <hr class="black-hr">
+      <div id="shell" class="info-row" onclick="toggleInfoRow('shell', 'shell-pm')">
+        <div class="info-row-header">
+          <div id="shell-pm" class="plus-minus-div">
+            <img src="icons/plus.svg">
+          </div>
+          <h2><strong>SERVICE STATION WORKER</strong> &nbsp; &nbsp; &nbsp; Shell Mikkola &nbsp; &nbsp; &nbsp; 2019</h2>
+        </div> 
+        <div class="small-text">
+          <ul class="experience-ul">
+            <li class="experience-bullets">My duties included a variety of customer service tasks and maintenance of the service station</li>
+            <li class="experience-bullets">I helped our service station win a national sales competition</li>
+            <li class="experience-bullets">I worked full-time for 4 months</li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+
+    <!--SKILLS-->
+    <div id="skills-triangle" class="ski-triangle">
+      <svg class="my-triangle">
+        <path d="M50 5 L10 40 L90 40 Z"/>   
+      </svg>
+    </div>
+    <div id="skills-sheet">
+      <div class="skills-direction">
+        <div id="IT" class="info-row-IT">
+          <h2><strong>SYSTEM KNOWLEDGE</strong></h2>
+          <ol class="ol-skills">
+            <h3 class="skills-font">Microsoft Office ––– Excellent skills</h3>
+            <h3 class="skills-font">SAP ––– Good skills</h3>
+            <h3 class="skills-font">RapidResponce ––– Good skills</h3>
+            <h3 class="skills-font">MatLab ––– Basics</h3>
+            <h3 class="skills-font">HTML + CSS + JS ––– Basics</h3>
+            <h3 class="skills-font">Solid Works ––– Basics</h3>
+          </ol>
+          <br>
+        </div>
+        <hr class="black-hr-skills">
+        <div id="languages" class="info-row-languages">
+          <h2><strong>LANGUAGES</strong></h2>
+          <ol class="ol-skills">
+            <h3 class="skills-font">Finnish ––– Native language</h3>
+            <h3 class="skills-font">English ––– C1</h3>
+            <h3 class="skills-font">Swedish ––– B1</h3>
+          </ol>
+          <br>
+        </div>
+        <hr class="black-hr-skills">
+        <div id="pro" class="info-row-pro">
+          <h2><strong>PROFESSIONAL SKILLS</strong></h2>
+          <ol class="ol-skills">
+            <h3 class="skills-font">Problem Solving</h3>
+            <h3 class="skills-font">Toiminnanohjaus</h3>
+            <h3 class="skills-font">Muutoksenhallinta</h3>
+          </ol>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--VIDEO SECTION-->
+  <div class="video-box">
+    <div class="video-div">
+      <iframe class="cv-video" src="https://www.youtube.com/embed/WHC28qttZ3">
+      </iframe>
+    </div>
+  </div>
+
+  <script src="LPCVV2.js"></script>
+</body>

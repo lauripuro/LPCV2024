@@ -1,0 +1,281 @@
+body {
+  background-color: rgb(16, 16, 37);
+  color: rgb(240, 240, 240);
+  font-family: 'Rajdhani', 'Hind Madurai', sans-serif;
+  font-size: 27px;
+  min-width: 1200px;
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  border: 0px solid white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  z-index: 0;
+}
+.small-title {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  z-index: 0;
+}
+.skills-font {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+}
+h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.small-text {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: 40px;
+  margin-left: 92px;
+}
+dd {
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: 300;
+}
+ol {
+  margin: 0px;
+  margin-top: -5px;
+}
+.ol-skills {
+  padding-left: 0px;
+  padding-top: 10px;
+  border: 0px solid black;
+}
+
+.kand-ol {
+  margin-left: 34px;
+  margin-top: 10px;
+  margin-right: 60px;
+}
+.di-ol {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-right: 0px;
+}
+ul {
+  font-size: 20px;
+}
+.hellu-ul {
+  margin-left: 34px;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: -20px;
+}
+.yo-tod {
+  margin-left: 80px;
+}
+.experience-ul {
+  padding-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.experience-bullets {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.experience-italic {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.top-box {
+  display: flex;
+  height: 584px;
+  width: 100%;
+}
+.top-box-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: start;
+  padding-bottom: 180px;
+  flex: 1.1;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+.name {
+  font-size: 110px;
+  font-weight: 400;
+  margin-right: 0px;
+  width: fit-content;
+}
+.info-box {
+  font-family: 'avenir', 'roboto', 'Hind Madurai', sans-serif;
+  font-weight: 200;
+  display: flex;
+  width: 518px;
+  margin: 0px 8px 0px 0px;
+  text-align: justify;
+}
+.info-box-finnish {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 19px;
+}
+.info-box-english {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+.top-box-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  margin-bottom: -4px;
+  margin-left: 40px;
+}
+.profile-picture {
+  width: 430px;
+  margin-top: 5px;
+  margin-left: 0px;
+  z-index: -1;
+  border: 0px solid white;
+}
+
+
+
+
+
+
+
+
+.header-bar {
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-top: 18px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.header-bar-line {
+  width: 1200px;
+  border: solid 1px rgb(240, 240, 240);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(120, 120, 120);
+  font-size: 38px;
+  transition: 0.2s;
+}
+.header-div:hover {
+  cursor: pointer;
+  color: rgb(200, 200, 200);
+}
+.active-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 240, 240);
+  font-weight: 500;
+  font-size: 55px;
+  transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  width: 1100px;
+}
+
+.video-div {
+  border-radius: 4px;
+  width: 97%;
+  height: 100%;
+}
+
+.cv-video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+.opintosuoritusote {
+  width: 100%;
+  height: 820px;
+}
+
+.opintosuoritusote-text {
+  text-decoration: underline;
+  color: rgb(13, 13, 218);
+  z-index: 10;
+}
+
+
+
