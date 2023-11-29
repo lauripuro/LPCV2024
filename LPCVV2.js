@@ -22,7 +22,7 @@ skillsSheet.className = "info-sheet-invisible";
 
 
 function Suomi() {
-  window.location.href = "Suomi.html";
+  window.location.href = "index.html";
 }
 
 function English() {
